@@ -118,6 +118,7 @@ padding: 13px 18px 6px;
 display: flex;
 border-radius: 30px;
 font-size: 1rem;
+border: 1px solid #1559c8;
 }
 .hero-text svg {
     background-color: #fff;
@@ -185,6 +186,7 @@ line-height: 1.5;
     border-radius: 25px;
     background-color: #3B82F6;
     color: #fff;
+    border: 1px solid #3B82F6;
 }
 .why-img img {
     width: 100%;
@@ -453,5 +455,6 @@ select {
     }
     .myForm button {
         width: 50%;
+        font-size: 1rem;
     }
   }
