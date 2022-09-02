@@ -2,9 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Oxanium', cursive;
 }
 body {
-    font-family: 'Oxanium', cursive;
     position: relative;
     background-color: #f2f2f2;
 }
@@ -224,7 +224,7 @@ line-height: 1.5;
     justify-content: space-between;
     margin-bottom: 50px;
 }
-input {
+.myForm input {
     width: 40%;
     border-top: none;
     border-left: none;
@@ -232,13 +232,12 @@ input {
     border-bottom: 1px solid lightgray;
     padding: 5px 0;
 }
-input:focus, 
+.myForm input:focus, 
 select:focus {
     outline: 2px solid transparent;
 }
-::placeholder {
+.myForm input::placeholder {
     font-size: 1.2rem;
-    font-family: 'Oxanium', cursive;
     color: #4B5563;
 }
 select {
@@ -275,36 +274,37 @@ select {
     margin-top: 30px;
     color: #6B7280;
 }
-/* Trade Section */
-.trade-section {
-    margin: 300px 30px;
+/* Product Section */
+.product-section {
+    margin: 300px 30px 100px;
 }
-.trade-section h3 {
+.product-section h3 {
     text-align: center;
+    font-size: 1.5rem;
 }
-.trade-container {
+.product-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     margin: 80px 30px;
     text-align: center;
 }
-.trade {
+.product {
     background-color: #fff;
     width: 100%;
     height: 450px;
     padding: 50px 20px;
     border-radius: 15px;
 }
-.trade:active {
+.product:active {
     background-color: #2B076E;
     color: #fff;
 }
-.trade h2 {
+.product h2 {
     margin-top: 40px;
     font-size: 2rem;
 }
-.trade span {
+.product span {
     margin-left: 10px;
     margin-top: 10px;
     position: absolute;
@@ -312,10 +312,10 @@ select {
     color: #4B5563;
     font-weight: 400;
 }
-.trade p {
+.product p {
     margin: 20px 0 70px;
 }
-.trade button {
+.product button {
     background-color: #3B82F6;
     font-size: 1rem;
     padding: 10px 20px 12px;
@@ -326,10 +326,11 @@ select {
     border: 1px solid #3B82F6;
     display: none;
 }
+
 .next {
     cursor: pointer;
   width: auto;
-  padding: 14px 22px;
+  padding: 20px 26px;
   color: #3B82F6;
   margin-top: 20px;
   font-weight: bold;
@@ -340,13 +341,131 @@ select {
   background-color: #fff;
   border: 2px solid #9CA3AF;
 }
-
-
-
-
-
-
-
+/* Features Section */
+.feature-section {
+    background-color: rgb(9, 9, 48);
+    color: #fff;
+}
+.feature-section h2 {
+   padding: 60px 0;
+   font-size: 2rem;
+   font-weight: 400;
+   width: 60%;
+   text-align: center;
+   margin: 0 auto;
+}
+.feature-container {
+    margin: 20px 40px;
+}
+.feature {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+.feature2 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+.feature-text, .feature-text2, .feature-text3{
+    width: 50%;
+}
+.feature-text h4, .feature-text2 h4, .feature-text3 h4{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.feature-text p, .feature-text2 p, .feature-text3 p{
+    font-size: 0.75rem;
+    color: #9CA3AF;
+    width: 90%;
+}
+.feature-text2 {
+    margin-top: 120px;
+}
+.feature-text3 {
+    margin-top: 40px;
+}
+.feature-img img {
+    width: 100%;
+    height: auto;
+    margin-left: -17%;
+}
+.feature-img2 img {
+    width: 100%;
+    height: auto;
+}
+.feature button, .feature2 button {
+    margin-top: 20px;
+    font-size: 0.75rem;
+    padding: 8px 15px;
+    border-radius: 25px;
+    background-color: #3B82F6;
+    color: #fff;
+    border: 1px solid #3B82F6;
+}
+/* CTA Section */
+.cta-container {
+    margin: 30px;
+}
+.cta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background-color: #3B82F6;
+    height: 200px;
+    padding: 70px 40px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.cta-text {
+    width: 75%;
+}
+.cta-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.cta-text p{
+    font-size: 0.775rem;
+}
+.cta-mail input {
+    width: 70%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #fff;
+    padding: 5px 0;
+    background-color: transparent;
+   
+}
+.cta-mail input:focus {
+    outline: 2px solid transparent;
+}
+.cta-mail input::placeholder {
+    color: #fff;
+    font-size: 0.875rem;
+}
+#subscribe {
+    background-color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #3d444e;
+    border: 1px solid #fff;
+    margin-left: 20px;
+}
+.fa-btc {
+    opacity: 0.1;
+    margin-left: 190%;
+    margin-top: -130px;
+    transform: rotate(20deg);
+}
+.fa-ethereum {
+    opacity: 0.1;
+    margin-left: -110%;
+    margin-top: -40%;
+}
 
 
 
@@ -520,7 +639,7 @@ select {
         display: flex;
         flex-direction: column;
     }
-    input {
+    .myForm input {
         width: 100%;
         margin-bottom: 30px;
     }
@@ -532,21 +651,81 @@ select {
         width: 50%;
         font-size: 1rem;
     }
-    .trade-section {
+    .product-section {
         margin: 350px 10px;
     }
-    .trade-section h3 {
+    .product-section h3 {
         font-size: 1.5rem;
     }
-    .trade-container {
+    .product-container {
         display: flex;
         flex-direction: column;
         margin: 50px 10px;
     }
-    .trade {
+    .product {
         height: 400px;
     }
-    .trade p {
+    .product p {
         margin-bottom: 40px;
+    }
+    .feature-section h2 {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+    .feature-container {
+        margin: 20px;
+    }
+    .feature, .feature2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 100px;
+    }
+    .feature-text, .feature-text2, .feature-text3 {
+        width: 90%;
+    }
+    .feature-text p, .feature-text2 p {
+        width: 100%;
+    }
+    .feature-text2, .feature-text3 {
+        margin-top: 0;
+    }
+    .feature-img img {
+        margin-left: 0;
+    }
+    .cta-container {
+        margin: 20px;
+    }
+    .cta {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        overflow: visible;
+        gap: 10px;
+        height: 250px;
+    }
+    .cta-text {
+        width: 100%;
+    }
+    .cta-text h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .cta-text p {
+        font-size: 0.775rem;
+    }
+    .cta-mail input {
+        width: 100%;
+    }
+    #subscribe {
+        margin: 20px 0 0 27%;
+    }
+    .fa-btc {
+       display: none;
+    }
+    .fa-ethereum {
+        margin: -70% 0 0;
+        transform: rotate(20deg);
     }
   }
