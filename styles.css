@@ -706,7 +706,7 @@ footer {
         margin-left: 0;
     }
     .cta-container {
-        margin: 20px;
+        margin: 20px 20px 0;
     }
     .cta {
         display: flex;
