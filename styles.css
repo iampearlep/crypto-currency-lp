@@ -84,7 +84,7 @@ input[type="checkbox"]{
 .deals {
     background-color: #4B5563;
     padding: 5px;
-    width: 55%;
+    width: 50%;
     display: flex;
     border-radius: 15px;
     margin-bottom: 30px;
@@ -107,6 +107,7 @@ h1 {
     font-size: 3rem;
     font-weight: 600;
     line-height: 1;
+    margin-bottom: 10px;
 }
 .hero-text p {
 font-size: 0.75rem;
@@ -299,6 +300,7 @@ select {
 .product:active {
     background-color: #2B076E;
     color: #fff;
+    transition: 100% 300ms ease-in 2s;
 }
 .product h2 {
     margin-top: 40px;
@@ -392,10 +394,11 @@ select {
     height: auto;
     margin-left: -17%;
 }
-.feature-img2 img {
+.feature-img2 img, .feature-img3 img  {
     width: 100%;
     height: auto;
 }
+
 .feature button, .feature2 button {
     margin-top: 20px;
     font-size: 0.75rem;
@@ -406,28 +409,45 @@ select {
     border: 1px solid #3B82F6;
 }
 /* CTA Section */
+.cta-section {
+    background-color: rgb(9, 9, 48);
+    color: #fff;
+    margin-top: -100px;
+}
 .cta-container {
-    margin: 30px 30px 0;
+    margin: 30px auto 0;
+    overflow: hidden;
+    
 }
 .cta {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
     background-color: #3B82F6;
     height: 200px;
-    padding: 70px 40px;
+    padding: 50px 40px;
     overflow: hidden;
+    margin: 80px 40px;
     border-radius: 20px;
+    position: relative;
 }
+
 .cta-text {
-    width: 75%;
+    width: 50%;
 }
 .cta-text h3 {
     font-size: 1.5rem;
     margin-bottom: 20px;
+    width: 60%;
 }
 .cta-text p{
     font-size: 0.775rem;
+    width: 80%;
+}
+.cta-mail {
+    width: 50%;
+    margin-left: 20px;
+    margin-top: 30px;
 }
 .cta-mail input {
     width: 70%;
@@ -456,26 +476,64 @@ select {
     margin-left: 20px;
 }
 .fa-btc {
-    opacity: 0.1;
-    margin-left: 190%;
-    margin-top: -130px;
+    opacity: 0.07;
     transform: rotate(20deg);
+    margin-top: 30px;
+    margin-left: 1020px;
+    position: absolute;
 }
 .fa-ethereum {
-    opacity: 0.1;
-    margin-left: -110%;
-    margin-top: -40%;
+    opacity: 0.07;
+    position: absolute;
+    margin-top: -50px;
 }
+
 footer {
     background-color: rgb(9, 9, 48);
     color: #fff;
-    height: 100px;
-    text-align: center;
+    text-align: left;
+    padding: 50px 30px 0;
 }
-.copyright {
-    padding-top: 80px;
-    font-size: 0.875rem;
-    color: #fff;
+footer li {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+footer h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+footer a:hover {
+    color: #2B076E;
+}
+.link-container {
+display: flex;
+flex-direction: row;
+gap: 80px;
+justify-content: center;
+}
+.footer-logo {
+    text-align: left;
+    width: 15%;
+    margin-top: -10px;
+}
+.quick-link, .resource-link {
+    width: 15%;
+}
+.payment-img {
+    display: flex;
+    gap: 20px;
+}
+.copyright-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.brands a {
+    margin-left: 1.5rem;
+}
+.brands i {
+    color: #E5E7EB;
 }
 
 
@@ -503,12 +561,8 @@ footer {
 
 
 
-
-  @media (max-width: 1000px){
-    nav{
-      padding: 0 40px 0 50px;
-    }
-  }
+  
+  
   @media (max-width: 920px) {
     nav .logo {
         margin-left: -30px;
@@ -572,24 +626,28 @@ footer {
     margin-top: -50px;
     text-align: center;
     }
+    nav .logo {
+        margin-left: -80px;
+    }
     .hero-container {
         display: flex;
         flex-direction: column;
         margin: 10px;
     }
     .hero-text {
-        margin-top: 30px;
+        margin-top: 10px;
     }
     .deals {
-        width: 80%;
+        width: 70%;
     }
     .deals p {
         margin-left: 10px;
-        font-size: 0.5rem;
+        margin-top: 7px;
+        font-size: 0.65rem;
     }
     .save {
-       width: 75%;
-        padding: 2px 10px 0;
+       width: 50%;
+        padding: 8px 3px 10px;
         font-size: 0.5rem;
     }
     h1 {
@@ -705,16 +763,20 @@ footer {
     .feature-img img {
         margin-left: 0;
     }
+    .cta-section {
+        margin-top: -110px;
+    }
     .cta-container {
-        margin: 20px 20px 0;
+        margin: 20px 10px 0;
     }
     .cta {
         display: flex;
         flex-direction: column;
-        padding: 30px;
+        padding: 20px;
         overflow: visible;
         gap: 10px;
         height: 250px;
+        margin: 100px 10px;
     }
     .cta-text {
         width: 100%;
@@ -722,12 +784,18 @@ footer {
     .cta-text h3 {
         font-size: 1.5rem;
         margin-bottom: 10px;
+        width: 100%;
     }
     .cta-text p {
         font-size: 0.775rem;
+        width: 100%;
+    }
+    .cta-mail {
+        width: 100%;
+        margin-left: 0;
     }
     .cta-mail input {
-        width: 100%;
+        width: 90%;
     }
     #subscribe {
         margin: 20px 0 0 27%;
@@ -736,7 +804,44 @@ footer {
        display: none;
     }
     .fa-ethereum {
-        margin: -70% 0 0;
-        transform: rotate(20deg);
+        margin: 0 0;
+    }
+    footer {
+        margin-top: 0;
+        padding: 70px 20px;
+        text-align: center;
+    }
+    footer h3 {
+        font-weight: 600;
+    }
+    .link-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 50px;
+    }
+    .footer-logo, .quick-link, .resource-link, .payment-container{
+        width: 100%;
+    }
+    .footer-logo {
+        margin-left: 25%;
+    }
+    .payment-container h3 {
+        font-size: 1rem;
+        width: 100%;
+    }
+    .payment-img {
+        gap: 30px;
+    }
+    .copyright-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .brands a {
+        margin-left: 2.5rem;
+    }
+    .brands a:first-child {
+        margin-left: 0;
     }
   }
