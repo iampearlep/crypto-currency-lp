@@ -7,6 +7,7 @@
 body {
     position: relative;
     background-color: #f2f2f2;
+    overflow-x: hidden;
 }
 .hero-section {
     background-color: rgb(9, 9, 48);
@@ -311,6 +312,10 @@ select {
     color: #fff;
     transition: 100% 300ms ease-in 2s;
 } */
+.hover-text h2 {
+    margin-top: 40px;
+    font-size: 2rem;
+}
 .product h2 {
     margin-top: 40px;
     font-size: 2rem;
@@ -323,7 +328,18 @@ select {
     color: #4B5563;
     font-weight: 400;
 }
+.hover-text span {
+    margin-left: 10px;
+    margin-top: 10px;
+    position: absolute;
+    font-size: 1.1rem;
+    color: #9CA3AF;
+    font-weight: 400;
+}
 .product p {
+    margin: 20px 0 70px;
+}
+.hover-text p{
     margin: 20px 0 70px;
 }
 .hide-btn2 {
@@ -333,7 +349,6 @@ select {
     background-color: #3B82F6;
     font-size: 1rem;
     padding: 10px 20px 12px;
-    margin-left: 5%;
     text-align: center;
     border-radius: 25px;
     color: #fff;
