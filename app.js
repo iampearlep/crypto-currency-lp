@@ -16,7 +16,6 @@ for (var i = 0; i < element.length; i++) {
   });
 
 }
-
 //let button = document.querySelector('.show-btn1');
  //console.log(button);
 //for (let i = 0; i < button.length; i++) {
