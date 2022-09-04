@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Oxanium', cursive;
+    text-decoration: none;
 }
 body {
     position: relative;
@@ -534,9 +535,7 @@ footer h3 {
     font-weight: 500;
     margin-bottom: 20px;
 }
-footer a:hover {
-    color: #2B076E;
-}
+
 .link-container {
 display: flex;
 flex-direction: row;
@@ -550,6 +549,13 @@ justify-content: center;
 }
 .quick-link, .resource-link {
     width: 15%;
+    cursor: pointer;
+}
+.quick-link ul li a, .resource-link ul li a {
+    color: #9CA3AF;
+}
+.quick-link ul li a:hover, .resource-link ul li a:hover {
+    color: #2B076E;
 }
 .payment-img {
     display: flex;
@@ -595,6 +601,9 @@ justify-content: center;
   
   
   @media (max-width: 920px) {
+    * {
+        overflow-x: hidden;
+    }
     nav .logo {
         margin-left: -30px;
      }
@@ -749,7 +758,8 @@ justify-content: center;
     }
     .myForm button {
         width: 50%;
-        font-size: 1rem;
+        font-size: 0.75rem;
+        padding: 6px 20px;
     }
     .product-section {
         margin: 350px 10px 100px;
@@ -760,13 +770,21 @@ justify-content: center;
     .product-container {
         display: flex;
         flex-direction: column;
-        margin: 50px 10px;
+        margin: 50px 0;
     }
     .product {
         height: 400px;
+        padding: 30px 10px;
     }
     .product p {
         margin-bottom: 40px;
+    }
+    .product h2 {
+        font-size: 1.5rem;
+    }
+    .product span {
+        margin-left: 0;
+        margin-top: 5px;
     }
     .feature-section h2 {
         font-size: 1.5rem;
@@ -839,7 +857,7 @@ justify-content: center;
     }
     footer {
         margin-top: 0;
-        padding: 70px 20px;
+        padding: 30px 5px;
         text-align: center;
     }
     footer h3 {
@@ -849,7 +867,7 @@ justify-content: center;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-        gap: 50px;
+        gap: 30px;
     }
     .footer-logo, .quick-link, .resource-link, .payment-container{
         width: 100%;
@@ -861,16 +879,21 @@ justify-content: center;
         font-size: 1rem;
         width: 100%;
     }
+    
     .payment-img {
-        gap: 30px;
+       gap: 10px;
+    }
+    .payment-img img{
+        width: 30%;
     }
     .copyright-container {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
+        padding: 10px 0;
     }
     .brands a {
-        margin-left: 2.5rem;
+        margin-left: 2rem;
     }
     .brands a:first-child {
         margin-left: 0;
