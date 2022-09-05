@@ -623,6 +623,7 @@ justify-content: center;
         text-align: center;
         display: block;
         transition: all 0.3s ease;
+        z-index: 1;
     }
     
     #click:checked ~ ul {
