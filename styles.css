@@ -299,7 +299,7 @@ select {
     padding: 50px 20px;
     border-radius: 15px;
 }
-.hover-text {
+#change3 {
     background-color:#2B076E;
     color: #fff;
     width: 100%;
@@ -307,13 +307,21 @@ select {
     padding: 50px 20px;
     border-radius: 15px;
 }
-
+#change3 button {
+    background-color: #3B82F6;
+    font-size: 1.2rem;
+    width: 200px;
+    padding: 15px 20px 12px;
+    text-align: center;
+    border-radius: 25px;
+    color: #fff;
+}
 /*.product:active {
     background-color: #2B076E;
     color: #fff;
     transition: 100% 300ms ease-in 2s;
 } */
-.hover-text h2 {
+#change3 h2 {
     margin-top: 40px;
     font-size: 2rem;
 }
@@ -355,8 +363,15 @@ select {
     color: #fff;
     border: 1px solid #3B82F6;
 }
-
-.show-btn1 {
+#click1, #click2, #click3 {
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #3B82F6;
+    background-color: #fff;
+}
+.show-btn1{
     cursor: pointer;
   width: auto;
   padding: 20px 26px;
