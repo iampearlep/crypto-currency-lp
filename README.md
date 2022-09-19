@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/iampearlep/crypto-currency-lp)
-- Live Site URL: [Add live site URL here](https://crypto-currency-lp.vercel.app/)
+- Solution URL: [Github repo](https://github.com/iampearlep/crypto-currency-lp)
+- Live Site URL: [CRAPPO](https://crypto-currency-lp.vercel.app/)
 
 ## My process
 
